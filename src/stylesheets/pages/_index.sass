@@ -1,0 +1,92 @@
+.container--index > * + *
+  margin-top: 1.6rem
+  
+.translate-text
+  display: grid
+  grid-template-columns: 1fr
+  row-gap: 1.6rem
+  @media ($lg-up)
+    column-gap: 1.6rem
+    grid-template-columns: 1fr 1fr
+
+.translate-input
+  all: unset
+  min-height: 128px
+  padding: .8rem
+  transition: all .2s ease-out
+  width: 100%
+  &:focus
+    border-color: blue
+  &::placeholder
+    color: rgba(0, 0, 0, 50%)
+  
+.translate-output
+  height: 100%
+  min-height: 128px
+  background: rgba(0, 0, 0, 5%)
+  border-radius: .12rem
+  padding: .8rem
+  position: relative
+
+.icon-loader
+  position: absolute
+  height: 2.4rem
+  width: 2.4rem
+  top: -2rem
+  right: 0
+
+.translate-input-wrapper
+  border: 1px solid rgba(0, 0, 0, 10%)
+  border-radius: 0.12rem
+
+.button
+  all: unset
+
+.button-record
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  padding: 0.4rem 1rem
+  background: rgba(0, 0, 0, 80%)
+  color: rgba(255, 255, 255, 85%)
+  border-bottom-left-radius: 0.12rem
+  border-bottom-right-radius: 0.12rem
+  transition: all .1s ease-out
+  cursor: pointer
+  & > * + *
+    margin-left: .4rem
+  &:hover
+    background: rgba(0, 0, 0, 66%)
+  
+.icon-record
+  height: 1rem
+  width: 2rem
+
+.history-wrapper
+  display: grid
+  grid-template-columns: 1fr
+  @media ($lg-up)
+    column-gap: 1.6rem
+    grid-template-columns: 1fr 1fr
+
+.heading-history-section
+  padding-bottom: .4rem
+  border-bottom: 1px solid rgba(0, 0, 0, 10%)
+  grid-column: span 1
+  @media ($lg-up)
+    grid-column: span 2
+
+.heading-history
+  padding-bottom: .2rem
+  border-bottom: 1px solid rgba(0, 0, 0, 10%)
+
+.history
+  min-height: 120px
+  overflow: scroll
+  @media ($lg-up)
+    min-height: 240px
+
+.translation-history
+  padding: .6rem 0
+  
